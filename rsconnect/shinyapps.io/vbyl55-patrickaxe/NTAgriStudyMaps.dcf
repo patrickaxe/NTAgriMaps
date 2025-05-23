@@ -1,0 +1,12 @@
+name: NTAgriStudyMaps
+title: NTAgriStudyMaps
+username: vbyl55-patrickaxe
+account: vbyl55-patrickaxe
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14810344
+bundleId:
+url: https://paddyrice.shinyapps.io/NTAgriStudyMaps/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

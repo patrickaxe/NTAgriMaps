@@ -6,9 +6,9 @@ library(DT)
 
 # Input Data
 
-sf <- read_sf(dsn=file.path(rprojroot::find_rstudio_root_file(), "Shapefiles","Study Area - Overall.shp"))
+sf <- read_sf(dsn="Shapefiles/Study Area - Overall.shp")
 
-landunits<-read_sf(dsn=file.path(rprojroot::find_rstudio_root_file(), "Shapefiles","Summary14.shp"))
+landunits<-read_sf(dsn="Shapefiles/Summary14.shp")
 
 
 # Transform shapefile to WGS84
