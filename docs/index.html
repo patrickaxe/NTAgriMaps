@@ -1,28 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shiny App</title>
-    <script
-      src="./shinylive/load-shinylive-sw.js"
-      type="module"
-    ></script>
-    <script type="module">
-      import { runExportedApp } from "./shinylive/shinylive.js";
-      runExportedApp({
-        id: "root",
-        appEngine: "r",
-        relPath: "",
-      });
-    </script>
-    <link rel="stylesheet" href="./shinylive/style-resets.css" />
-    <link rel="stylesheet" href="./shinylive/shinylive.css" />
-    
-  </head>
-  <body>
-    
-    <div style="height: 100vh; width: 100vw" id="root"></div>
-    
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>NT Agri Study Maps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background-color: #f7f7f7;
+      color: #333;
+      max-width: 700px;
+      margin: auto;
+    }
+    h1 {
+      color: #006400;
+    }
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #228B22;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    a.button:hover {
+      background-color: #006400;
+    }
+    img {
+      max-width: 100%;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>NT Agri Study Maps</h1>
+  <p>
+    This interactive map application visualises key agricultural study areas for the Northern Territory of Australia.
+    Explore agricultural land suitability overlays in an easy-to-use Shiny interface.
+  </p>
+
+  <a class="button" href="https://paddyrice.shinyapps.io/NTAgriStudyMaps/" target="_blank">Launch App</a>
+
+  <h2>Screenshots</h2>
+  <img src="Screenshot.png" alt="App Screenshot">
+
+  <h2>About</h2>
+  <p>
+    This Shiny app was developed using <code>leaflet</code> and <code>shiny</code> to support agricultural research in the NT region.
+    Hosted on <a href="https://shinyapps.io" target="_blank">shinyapps.io</a>, and source code available on <a href="https://github.com/patrickaxe/NTAgriStudyMaps" target="_blank">GitHub</a>.
+  </p>
+
+</body>
 </html>
+
