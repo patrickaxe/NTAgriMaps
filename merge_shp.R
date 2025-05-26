@@ -44,7 +44,7 @@ WEA18_25 <- WEA18_25 %>%
   mutate(across(LCAP_CLASS, as.numeric))
 
 # Combine them into a single spatial object
-combined_layers <- bind_rows(ALICU_25_GLC, `BESWI_25 GLC`, `DUNMA_50 GLC`,FRE15_50,KARLS_50,KRP18_25,LAR18_25,LARRI_25, NANGU_25,ORACK_25,ROPLU_100,TTREE_25,WEA18_25,WILDM_25)
+combined_layers <- bind_rows(ALICU_25,BESWI_25,DUNMA_50,FRE15_50,KARLS_50,KRP18_25,LAR18_25,LARRI_25, NANGU_25,ORACK_25,ROPLU_100,TTREE_25,WEA18_25,WILDM_25)
 
 
 # Save to a new shapefile
